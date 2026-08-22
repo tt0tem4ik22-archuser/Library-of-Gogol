@@ -1,5 +1,5 @@
 function generatePage() {
-    const text = "Тест"//document.getElementById('userInput').value;
+    const text = "Тест"
     const htmlContent = `
 <!DOCTYPE html>
 <html lang="ru">
@@ -21,6 +21,6 @@ function generatePage() {
     const pageUrl = URL.createObjectURL(blob);
 
     window.open(pageUrl, '_blank');
-        }
+}
 
 generatePage();
