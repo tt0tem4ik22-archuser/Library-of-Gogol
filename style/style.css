@@ -187,8 +187,8 @@ header {
 
 @media (600px <= width < 1024px) {
     .header__top {
-        padding-right: 0;
-        padding-left: 0;
+        padding-right: 2px;
+        padding-left: 2px;
         justify-content: center;
     }
     .header__bottom {
