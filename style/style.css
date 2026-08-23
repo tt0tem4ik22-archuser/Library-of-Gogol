@@ -57,6 +57,10 @@ content.writer {
     gap: 10px;
 }
 
+#book_text {
+    width: 90%;
+}
+
 content.book {
     font-family: "Theano Didot";
     width: 90%;

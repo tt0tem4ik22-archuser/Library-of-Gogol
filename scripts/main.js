@@ -111,23 +111,27 @@
       doc.close();
 
       const body = doc.body;
+
+      const container = doc.createElement('div');
+      container.id = "book_text";
+      doc.body.append(container);
       console.log("Инициация заголовка имени автора");
       if (h2Text) {
         const el2 = doc.createElement('h2');
         el2.textContent = h2Text;
-        body.appendChild(el2);
+        container.appendChild(el2);
       }
       console.log("Инициация заголовка названия");
       if (h1Text) {
         const el1 = doc.createElement('h1');
         el1.textContent = h1Text;
-        body.appendChild(el1);
+        container.appendChild(el1);
       }
       console.log("Инициация новых абзацев");
       paragraphs.forEach(p => {
         const pEl = doc.createElement('p');
         pEl.textContent = p;
-        body.appendChild(pEl);
+        container.appendChild(pEl);
       });
     } catch (err) {
       console.error('Не удалось загрузить файл текста', err);
