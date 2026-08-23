@@ -57,7 +57,12 @@
       doc.open();
       doc.write(`<!DOCTYPE html><html><head><meta charset="utf-8"/><title>` +
         escapeHtml(h1Text || linkText) +
-        `</title><link rel="stylesheet" href="/Library-of-Gogol/style/style.css" /></head><body><header class="header">
+        `</title><link rel="stylesheet" href="/Library-of-Gogol/style/style.css" /></head><style>
+body {
+    display: flex;
+    justify-content: center;
+}
+        </style><body><header class="header">
         <div class="header__mobile">
             <div class="header__mobile-top">
                 <h1 class="header__logo">Библиотека имени Гоголя</h1>
@@ -107,6 +112,7 @@
             </div>
         </div>
     </header>
+
     <button><a href="`+url+`" download>Скачать книгу</a></button></body></html>`);
       doc.close();
 
