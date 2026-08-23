@@ -106,7 +106,8 @@
                 </div>
             </div>
         </div>
-    </header></body></html>`);
+    </header>
+        <button><a href="`+url+`">Скачать книгу</a></button></body></html>`);
       doc.close();
 
       const body = doc.body;
