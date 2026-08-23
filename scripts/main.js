@@ -57,7 +57,7 @@
       doc.open();
       doc.write(`<!DOCTYPE html><html><head><meta charset="utf-8"/><title>` +
         escapeHtml(h1Text || linkText) +
-        `</title><link rel="stylesheet" href="../../style/style.css" /></head><body><header class="header">
+        `</title><link rel="stylesheet" href="/Library-of-Gogol/style/style.css" /></head><body><header class="header">
         <div class="header__mobile">
             <div class="header__mobile-top">
                 <h1 class="header__logo">Библиотека имени Гоголя</h1>
@@ -66,17 +66,17 @@
             <div class="header__bottom_mobile">
                 <div class="header__select">
                     <div class="header__select-header">
-                        <span class="header__select-current"><a href="/library.html">Каталог</a></span>
+                        <span class="header__select-current"><a href="/Library-of-Gogol/library.html">Каталог</a></span>
                     </div>
                 </div>
                 <div class="header__select">
                     <div class="header__select-header">
-                        <span class="header__select-current"><a href="/download.html">Скачать всю библиотеку</a></span>
+                        <span class="header__select-current"><a href="/Library-of-Gogol/download.html">Скачать всю библиотеку</a></span>
                     </div>
                 </div>
                 <div class="header__select">
                     <div class="header__select-header">
-                        <span class="header__select-current"><a href="/rights.html">Для правообладателей</a></span>
+                        <span class="header__select-current"><a href="/Library-of-Gogol/rights.html">Для правообладателей</a></span>
                     </div>
                 </div>
             </div>
@@ -92,22 +92,22 @@
         <div class="header__bottom">
             <div class="header__select">
                 <div class="header__select-header">
-                    <span class="header__select-current"><a href="/library.html">Каталог</a></span>
+                    <span class="header__select-current"><a href="/Library-of-Gogol/library.html">Каталог</a></span>
                 </div>
             </div>
             <div class="header__select">
                 <div class="header__select-header">
-                    <span class="header__select-current"><a href="/download.html">Скачать всю библиотеку</a></span>
+                    <span class="header__select-current"><a href="/Library-of-Gogol/download.html">Скачать всю библиотеку</a></span>
                 </div>
             </div>
             <div class="header__select">
                 <div class="header__select-header">
-                    <span class="header__select-current"><a href="/rights.html">Для правообладателей</a></span>
+                    <span class="header__select-current"><a href="/Library-of-Gogol/rights.html">Для правообладателей</a></span>
                 </div>
             </div>
         </div>
     </header>
-        <button><a href="`+url+`">Скачать книгу</a></button></body></html>`);
+    <button><a href="`+url+`">Скачать книгу</a></button></body></html>`);
       doc.close();
 
       const body = doc.body;
