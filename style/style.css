@@ -31,10 +31,9 @@ body {
     margin-top: 2vh;
 }
 
-header {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0vh;
+
+footer {
+    background-color: #ffe7ad;
 }
 
 h2 {
@@ -65,4 +64,187 @@ content.book {
 
 .text_block {
     flex: 1;
+}
+
+header {
+    background-color: #ffe7ad;
+}
+
+.header__logo {
+    width: 28rem;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.header__top {
+    display: flex;
+    padding-top: 1.44rem;
+    padding-bottom: 1.61rem;
+    align-items: center;
+    border: solid 0.05rem #b9b9b9;
+}
+
+.header__bottom {
+    border-bottom: solid 0.05rem #b9b9b9;
+    justify-content: center;
+    height: 3.20rem;
+    width: 100%;
+    font-weight: 500;
+    align-items: center;
+}
+
+.header__select {
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.header__select-header{
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (320px <= width < 600px) {
+    .header {
+        position: relative;
+    }
+    .header__bottom {
+        display: none;
+    }
+    .header__top {
+        display: none
+    }
+    .header__bottom_mobile {
+        font-weight: 500;
+        margin-top: 1rem;
+        box-sizing: border-box;
+        padding: 0 1.7rem;
+    }
+    .header__select {
+        padding: 0.89rem 0;
+        border-bottom: solid 0.05rem #b9b9b9;
+        max-height: max-content;
+    }
+    .header__top {
+        justify-content: space-between;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .header__link {
+        margin-top: 0.89rem;
+    }
+    .header__mobile {
+        padding: 1.61rem 0 0 0;
+        height: 55vh;
+        width: 100%;
+        border: solid 0.05rem #b9b9b9;
+        box-sizing: border-box;
+        animation: 0.8s ease-in-out;
+        z-index: 100;
+        background-color: #ffe7ad;
+    }
+    .header__mobile-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 1.6rem 1.67rem;
+        border: solid 0.05rem #b9b9b9;
+        border-top: none;
+    }
+    .header__mobile-top .header__logo { 
+        width: 50%;
+    }
+    .header__burger {
+        width: 1.27rem;
+        position: relative;
+        cursor: pointer;
+        height: 0.87rem;
+        display: flex;
+        align-items: center;
+    }
+    .header__mobile {
+        left: -17.8rem;
+    }
+    .header__burger-menu, .header__burger-menu::after, .header__burger-menu::before {
+        width: 100%;
+        position: absolute;
+        height: 0.18rem;
+        background-color: black;
+        animation: 0.3s ease-in-out;
+        border-radius: 0.17rem;
+    }
+    .header__burger-menu::after {
+        content: none;
+        top: 0.341rem;
+    }
+    .header__burger-menu::before {
+        content: none;
+        bottom: 0.341rem;
+    }
+}
+
+@media (600px <= width < 1024px) {
+    .header__top {
+        padding-right: 0;
+        padding-left: 0;
+        justify-content: center;
+    }
+    .header__bottom {
+        margin-bottom: 4rem;
+        justify-content: center;
+        display: flex;
+    }
+    .header__mobile {
+        display: none;
+    }
+    .header__logo {
+        transform: translateX(4rem);
+    }
+}
+
+@media screen and (width >= 1024px) {
+    .header {
+        position: sticky;
+        top: 0;
+        animation: all 0.5s ease-in-out;
+    }
+    .header__mobile {
+        display: none;
+    }
+    .header__burger {
+        display: none;
+    }
+    .header__top {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .header__top_right {
+        right: 5rem;
+    }
+    .header__bottom {
+        display: flex;
+        margin-bottom: 2.5rem;
+    }
+    .header__link {
+        margin-top: 0;
+    }
+    .header__select {
+        position: relative;
+        height: inherit;
+        max-height: none;
+        display: flex;
+        border-bottom: none;
+        margin-right: 1.8rem; 
+        padding: 0;
+    }
+    .header__select-body {
+        position: absolute;
+        border: solid 0.05rem #b9b9b9;
+        border-top: none;
+        padding: 1.1rem;
+        margin-top: 3.2rem;
+        height: max-content;
+        box-sizing: border-box;
+        background-color: white:
+        top: 0; 
+    }
 }
